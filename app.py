@@ -6,7 +6,7 @@ import os
 st.title("AI Prompt Generator")
 
 raw_api_key = st.text_input("Masukkan Google API Key Anda", type="password")
-api_key = raw_api_key.strip(
+api_key = raw_api_key.strip()
 uploaded_file = st.file_uploader("Upload gambar/video", type=['jpg', 'png', 'mp4'])
 
 if uploaded_file and api_key:
